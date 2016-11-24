@@ -1,0 +1,20 @@
+{
+  "webserver": {
+    "port": 8080,
+    "basePath" : "/services/msd",
+    "secure" : false
+  },
+  "mid" : {
+  	"port" : 8095,
+  	"basePath" : "/services/mid",
+  	"useForMIDGUI" : true
+  },
+  "processes" : {
+    "loctite-wechseln" : {
+    	"processId" : "0b4e2ad2-09dc-11e5-a6c0-1697f925ec7b"
+    },
+    "fett-wechseln" : {
+    	"processId" : "0b4e5e9e-09dc-11e5-a6c0-1697f925ec7b"
+    }
+  }
+}

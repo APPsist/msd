@@ -1,0 +1,54 @@
+@font-face {
+    font-family: fira-sans;
+    src: url(fonts/firasans-medium-webfont.woff);
+}
+
+body {
+	font-family: fira-sans;
+	font-size: 16px;
+	background-color: #E5E5E5;
+}
+
+button {
+	padding: 10px 15px;
+	margin: 5px 0px 5px 10px;
+	background-color: #103A66;
+	font-size: 16px;
+	font-family: fira-sans;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+}
+
+#main {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	font-size: 32px;
+	padding-left: 150px;
+	line-height: 120px;
+	margin: 10px 0px 20px;
+	background-image: url("../img/appsist.svg");
+	background-position: left center;
+	background-size: 100px;
+	background-repeat: no-repeat;
+}
+
+div.container {
+	background-color: #FFFFFF;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+div.container > div.title {
+	font-size: 20px;
+	margin: 5px 10px;
+}
+
+div.container > div.body {
+	
+}

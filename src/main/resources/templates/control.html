@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="./js/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script>
+  	MSD.init();
+  </script>
+</head>
+<body>
+<div id="main">
+  <div id="header">
+  	{{header}}
+  </div>
+  <div class="container">
+  	<div class="title">{{festoscenario}}</div>
+  	<div class="body">
+		<table>
+			<tr>
+				<td>
+					<button onclick="MSD.performAction('fillLoctite');">{{fillloctite}}</button>
+				</td>
+				<td>
+					<button onclick="MSD.performAction('emptyLoctite');">{{emptyloctite}}</button>
+				</td>
+			</tr>
+	      	<tr>
+	      		<td>
+	      			<button onclick="MSD.performAction('fillFat');">{{fillfat}}</button>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performAction('emptyFat');">{{emptyfat}}</button>
+	      		</td>
+	      	</tr>
+	      	<tr>
+	      		<td>
+	      			<button onclick="MSD.performAction('fpilotDoorOpenToFalse');">{{opendoor}}</button>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performAction('fpilotDoorOpenToTrue');">{{closedoor}}</button>
+	      		</td>
+	      	</tr>
+	      	<tr>
+	    		<td>
+	      			<button onclick="MSD.performAction('fpilotAutomaticModeToFalse');">{{manualmode}}</button>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performAction('fpilotAutomaticModeToTrue');">{{nomanualmode}}</button>
+	    		</td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	      			<button onclick="MSD.performAction('fpilotLockedToTrue');">{{lock}}</button>
+	    		</td>
+	    		<td>
+	      			<button onclick="MSD.performAction('fpilotLockedToFalse');">{{unlock}}</button>
+	      		</td>
+	    	</tr>
+	      	<tr>
+	      		<td>
+	      			<input id='weldSeamErrorInput'/>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performActionWithParam('reportWeldSeamError', document.getElementById('weldSeamErrorInput').value);">{{reportweldseamerror}}</button>
+	      		</td>
+	      	</tr>
+	    </table>
+	</div>
+	<div class="title">{{cebitscenario}}</div>
+	<div class="body">
+		<table>
+			<tr>
+				<td>
+	      			<button onclick="MSD.performAction('festoStateOkToFalse');">{{opendoor}}</button>
+	    		</td>
+				<td>
+	      			<button onclick="MSD.performAction('festoStateOkToTrue');">{{closedoor}}</button>
+	      		</td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	      			<button onclick="MSD.performAction('festoQ1ToTrue');">{{emptyspringstorage}}</button>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performAction('festoQ1ToFalse');">{{fillspringstorage}}</button>
+	    		</td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	      			<button onclick="MSD.performAction('festoQ2ToTrue');">{{emptycapstorage}}</button>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performAction('festoQ2ToFalse');">{{fillcapstorage}}</button>
+	    		</td>
+	    	</tr>    	
+	   					<tr>
+	    		<td>
+	      			<button onclick="MSD.performAction('festoLostPartToTrue');">{{lostpart}}</button>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performAction('festoLostPartToFalse');">{{nopartlost}}</button>
+	    		</td>
+	    	</tr>
+	    </table>
+  	</div>
+
+  
+  
+  <div class="title">{{floodingtests}}</div>
+	<div class="body">
+		<table>
+			
+	    	<tr>
+	    		<td>
+	      			<button onclick="MSD.performAction('start10HzSimulation');">{{hzon10}}</button>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performAction('stop10HzSimulation');">{{hzoff10}}</button>
+	    		</td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	      			<button onclick="MSD.performAction('start100HzSimulation');">{{hzon100}}</button>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performAction('stop100HzSimulation');">{{hzoff100}}</button>
+	    		</td>
+	    	</tr>
+	    </table>
+  	</div>
+  	
+  	<div class="title">{{mbbscenario}}</div>
+	<div class="body">
+		<table>
+			<tr>
+	    		<td>
+	      			<button onclick="MSD.performAction('mbbLostPartToTrue');">{{lostpart}}</button>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performAction('mbbLostPartToFalse');">{{nopartlost}}</button>
+	    		</td>
+	    	</tr>
+			<tr>
+				<td>
+	      			<button onclick="MSD.performAction('mbbDoorOpenToTrue');">{{opendoor}}</button>
+	    		</td>
+				<td>
+	      			<button onclick="MSD.performAction('mbbDoorOpenToFalse');">{{closedoor}}</button>
+	      		</td>
+	    	</tr>
+	    	<tr>
+	    		<td>
+	      			<button onclick="MSD.performAction('mbbManualModeToTrue');">{{manualmode}}</button>
+	      		</td>
+	      		<td>
+	      			<button onclick="MSD.performAction('mbbManualModeToFalse');">{{nomanualmode}}</button>
+	    		</td>
+	    	</tr>
+	   
+	    </table>
+  	</div>
+  	
+  	
+  </div>
+  
+  
+</div>
+</body>
+</html>
